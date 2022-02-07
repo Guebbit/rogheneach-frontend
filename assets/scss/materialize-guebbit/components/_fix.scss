@@ -1,0 +1,67 @@
+// fix overlay over sidenav
+.navbar-fixed{
+	z-index: 998;
+	& > nav{
+		top: 0;
+	}
+	&.no-height{
+		height: 0;
+	}
+}
+
+
+// multilevel dropdown
+.dropdown-content{
+	&.expanded {
+	    overflow-y: visible;
+	}
+	.dropdown-content {
+	    margin-left: 100%;
+	}
+}
+
+// fix materialboxed open
+img.materialboxed.active{
+	@include prefix((
+		transform: none !important
+	), webkit);
+}
+
+
+//materialize badge fix
+span.badge.new:after{
+    content:"" !important;
+}
+
+//materialize table striped + highlight fix
+table.striped.highlight > tbody > tr:hover{
+    background-color: lighten($primary-color,50%);
+}
+
+//barra verticale visibile solo on hover
+.sidenav-fixed{
+	overflow:hidden;
+	&:hover{
+		overflow-y:auto;
+	}
+}
+
+// cursor pointer on collections buttons
+.collection{
+	.collection-item{
+		.secondary-content{
+			cursor: pointer;
+		}
+	}
+}
+
+
+// fontawesome 4.7 icons same width material-icons
+.fa{
+    @extend .material-icons;
+}
+//fontawesome 5 unknown bug fix
+nav .icon-only .fa-icon{
+	height: $navbar-height;
+    line-height: $navbar-line-height;
+}

@@ -1,0 +1,16 @@
+.modal{
+	.modal-content{
+		@include builder_scrollbar($primary-color,3px);
+	}
+	&.mega-modal{
+		width: 95%;
+	    max-height: 90%;
+		top: 5% !important;
+		&.modal-fixed-footer{
+			height: 90%;
+		}
+	}
+	&.large-modal{
+		width: 85%;
+	}
+}

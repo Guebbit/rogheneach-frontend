@@ -1,0 +1,97 @@
+//colors
+@import "global/colors/materialize";
+@import "global/colors/socials";
+@import "global/colors/brands";
+@import "global/colors/gradients";
+@import "global/colors/customs";
+
+//functions
+@import "global/functions";
+@import "global/mixins";
+@import "global/abstract";
+
+//variables
+@import "global/colors/site_colors";
+@import "materialize/components/variables";
+@import "materialize-guebbit/components/main/variables";
+
+/*
+@mixin builder_abscenter-x(){
+	position: absolute;
+	left: 50%;
+	@include prefix((
+		transform: translate(-50%, 0)
+	), webkit);
+}
+@mixin builder_abscenter-y(){
+	position: absolute;
+	top: 50%;
+	@include prefix((
+		transform: translate(0, -50%)
+	), webkit);
+}
+@include builder_abscenter-xy;
+@include builder_fullcenter;
+@include builder_background;
+@include builder_flex;
+@include builder_flexcenter;
+@include builder_flexaround;
+@include builder_flexevenly;
+@include builder_flexbetween;
+
+
+@include builder_textshadow(g-color("shades","black"));	//,2);
+@include builder_shadow(g-color("shades","black"));		//,2);
+
+
+@include builder_color_form($color, $secondary:null, $intensity:0);
+
+@include builder_scrollbar($primary-color,3px,$background-color);
+//trick:
+overflow: hidden;
+&:hover{
+	padding-right: 21px;
+	overflow-y: scroll;
+}
+
+
+
+@include prefix((
+	transition: all 0.2s
+), webkit);
+
+webkit moz ms
+
+
+
+@include keyframes(slide-down) {
+	0% { opacity: 1; }
+	90% { opacity: 0; }
+}
+
+
+
+// large 		= (min-width: 993px)
+// medium 		= (min-width: 600px) and (max-width: 992px)
+// small		= (max-width: 600px)
+// medium-large	= (min-width: 601px)
+// small-medium	= (max-width: 992px)
+
+@include builder_media("large") {
+
+}
+
+
+
+// ie 	= internet explorer
+// edge = microsoft edge
+
+@include builder_compatibility("ie"){
+
+}
+
+
+
+@import '../../sass/_builder';
+archives/sass/materialize-guebbit/materialize-guebbit.min.css
+*/

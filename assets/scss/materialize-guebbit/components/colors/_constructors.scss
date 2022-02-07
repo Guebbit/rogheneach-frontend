@@ -1,0 +1,14 @@
+@each $sname, $scolor in map-get($colors, "social") {
+	.#{$sname} {
+		&-color {
+			background: $scolor !important;
+		}
+		&-text {
+			color: $scolor !important;
+		}
+	}
+}
+//fix
+.instagram-text{
+	color:#f09433 !important;
+}

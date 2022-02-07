@@ -1,0 +1,35 @@
+$simpleCard2-height: 300px !default;
+$simpleCard2-font-color: color("shades","white") !default;
+
+.simpleCard2{
+	height: $simpleCard2-height;
+	position: relative;
+	z-index: 1;
+	margin: .5rem 0 1rem 0;
+	border-radius: 2px;
+	overflow: hidden;
+	& > img{
+		@include builder_background;
+		z-index: -1;
+	}
+	& > .card-action {
+		@include builder_fullcenter;
+		display:block;
+		z-index: 1;
+	}
+	& > .card-content {
+		color: $simpleCard2-font-color;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 24px;
+		.highlight{
+			padding: 5px;
+		}
+	}
+	&.no-margin{
+		& > .card-content  > *{
+			margin: 0;
+		}
+	}
+}

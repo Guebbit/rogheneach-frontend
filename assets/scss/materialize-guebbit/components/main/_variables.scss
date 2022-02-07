@@ -1,0 +1,28 @@
+/*
+//posso creare colori da 0 e inserirli così
+$colors: map-merge($colors,(
+	"primary-color": $cyan,
+	"new-color": (
+		"base":       #e51c23,
+		"lighten-5":  #fdeaeb,
+		"lighten-4":  #f8c1c3,
+		"lighten-3":  #f3989b,
+		"lighten-2":  #ee6e73,
+		"lighten-1":  #ea454b,
+		"darken-1":   #d0181e,
+		"darken-2":   #b9151b,
+		"darken-3":   #a21318,
+		"darken-4":   #8b1014,
+		)
+	)
+);
+*/
+
+//GENERIC
+$box-shadow: 0 2px 2px 0 rgba(color("shades","black"), 0.14), 0 3px 1px -2px rgba(color("shades","black"), 0.12), 0 1px 5px 0 rgba(color("shades","black"), 0.2) !default;
+$g-responsive-table-width: 300px;
+
+
+//BUTTONS
+$button-primary-raised-background: $primary-color !default;
+$button-primary-raised-background-hover: lighten($button-primary-raised-background, 5%) !default;

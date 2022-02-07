@@ -1,0 +1,5 @@
+//necessita che gli elementi all'interno abbiamo una width precisa
+.g-flex-row{
+	@include builder_flexcenter;
+	flex-flow: wrap;
+}

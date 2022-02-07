@@ -1,0 +1,125 @@
+{
+	"meta": {
+		"title": "Rogheneach - Fantasy Medievale Storico",
+		"description": "Rogheneach è un mondo fantasy in chiave storica. Federico I detto Barbarossa è un Gallipode che invade l'Italia con un esercito di draghi...",
+		"og": {
+			"og:image": "https://rogheneach.com/assets/images/generic/wallpaper-rogh-vol2.jpg",
+			"og:image:alt": "copertina volume 2 Rogheneach atteso seguito",
+			"og:image:width": "600",
+			"og:image:height": "337",
+			"og:image:type": "image/jpg",
+			"og:type": "website"
+		}
+	},
+	"generic": {
+		"author": {
+			"username": "Mychron",
+			"name": "Myriam Savini",
+			"bio": [
+				"Disegnatrice da bambina, fumettista da adulta, sognatrice da sempre."
+			]
+		},
+		"follow-me": "Seguimi per vedere altri fumetti, illustrazioni e tutorial"
+	},
+	"social": {
+		"website": {
+			"url": "https://mychron.it/",
+			"alt": "website mychron rogheneach",
+			"text": "Website"
+		},
+		"patreon": {
+			"url": "https://www.patreon.com/mychrontales",
+			"alt": "patreon mychron rogheneach",
+			"text": "Patreon"
+		},
+		"facebook": {
+			"url": "https://www.facebook.com/mychronmyriamsavini/",
+			"alt": "facebook mychron rogheneach",
+			"text": "Facebook"
+		}
+	},
+	"header": {
+		"readme-button": "leggimi",
+		"website-button": "Seguimi"
+	},
+	"storyDescription": {
+		"title": "Rogheneach",
+		"tags": ["Fantasy", "Medievale", "Storico"],
+		"prizes": [
+			["https://www.animeclick.it/news/59874-iica-2015-i-risultati-di-questa-edizione-dellitalian-indie-comics-award", "IICA", "Miglior Fantasy Classico"]
+		],
+		"description": [
+			"Rogheneach è qualcosa di diverso: Un mondo fantasy in chiave storica.",
+			"Europa, Germania, anno del Signore 1155. Federico I, detto Barbarossa, viene eletto imperatore della Germania, segnando la fine di lunghe contese e rivalità tra gli Umani tedeschi e i Gallipodi svevi."
+		],
+		"continue": "Scopri di più",
+		"links": {
+			"facebook": {
+				"url": "https://www.facebook.com/rogheneach/",
+				"alt": "Segui Rogheneach su Facebook"
+			},
+			"tapastic": {
+				"url": "https://tapas.io/series/Roghenea",
+				"alt": "Segui Rogheneach su Tapastic"
+			},
+			"webtoon": {
+				"url": "https://www.webtoons.com/en/challenge/rogheneach/list?title_no=332264",
+				"alt": "Segui Rogheneach su Webtoon"
+			}
+		}
+	},
+
+	"volumeBuy": {
+		"coming-soon": "Coming Soon",
+		"buy": {
+			"shipping-text": "Spedizione gratuita",
+			"payment-success-title": "Grazie per l'acquisto!",
+			"payment-success-text": "Provvederò a spedirlo subito.",
+			"payment-failure-title": "Qualcosa è andato storto",
+			"payment-failure-text": "Se qualcosa non va, contattami!"
+		},
+		"volumes": [
+			{
+				"id": "rogheneach-volume-1",
+				"cover": "rogh-vol1.jpg",
+				"spine": "rogh-vol1-spine.jpg",
+				"title": "Rogheneach",
+				"subtitle": "Volume 1",
+				"description": [
+					"Berenice ha un sogno: farsi una famiglia e vivere una vita normalissima. Non potendo ripiega sul sogno B: diventare Cavaliere di Drago.",
+					"Nobile per caso, le difficoltà sono enormi e l'Accademia di Sion sembra un posto ostile. Riuscirà la nostra eroina a sopravvivere alla propria idiozia?"
+				],
+				"badges": [],
+				"links": [
+					["https://www.webtoons.com/en/challenge/rogheneach/a-triumphant-start-1/viewer?title_no=332264&episode_no=1", "Webtoons", "fas fa-book"],
+					["https://tapas.io/episode/1508024", "Tapastic", "fas fa-book"],
+					["https://www.facebook.com/pg/rogheneach/photos/?tab=album&album_id=1107115799299082", "Facebook", "fab fa-facebook-f"]
+				],
+				"buy": true,
+				"price": "6.90"
+			},
+			{
+				"id": "rogheneach-volume-2",
+				"cover": "rogh-vol2.jpg",
+				"spine": "rogh-vol2-spine.jpg",
+				"title": "Rogheneach",
+				"subtitle": "Volume 2",
+				"description": [
+					"Berenice affronta una guerra senza addestramento. Con Rogheneach e Agnese al suo fianco, riuscirà a sopravvivere la Terza Discesa in Italia?",
+					"Qualcuno, inoltre, sembra tramare nell'ombra alle spalle dell'Imperatore..."
+				],
+				"badges": ["NEW"],
+				"links": [
+					["https://www.patreon.com/posts/rogheneach-ch-05-34523729", "Patreon", "fas fa-book"],
+					["https://www.webtoons.com/en/challenge/rogheneach/on-the-other-side-1/viewer?title_no=332264&episode_no=29", "Webtoons", "fas fa-book"],
+					["https://tapas.io/episode/1667584", "Tapastic", "fas fa-book"]
+				],
+				"buy": false,
+				"price": "6.90"
+			}
+		]
+	},
+	"makingOf": {
+		"background-alt": "Speedpaint Berenice. Rogheneach Fantasy"
+	}
+}

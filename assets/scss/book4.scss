@@ -1,0 +1,125 @@
+$book4-height: 600px !default;
+$book4-width: $book4-height*(6/9) !default;	//6x9: standard proportions
+$book4-spine: 50px !default;
+$book4-left: $book4-spine !default;
+$book4-rotation: 4 !default;	// max 7.5
+
+.book4 {
+	height: $book4-height;
+	width: $book4-width;
+	margin: 0 auto;
+	color: g-color("shades","white");
+	@include prefix((
+		perspective: 1200px
+	), webkit);
+	font-size: 25px;
+	& > div {
+		width: 100%;
+		height: 100%;
+		box-shadow: 2px 2px 6px rgba(g-color("shades","black"), 0.7);
+		@include prefix((
+			transition: 0.75s,
+			transform-style: preserve-3d,
+			transform-origin: $book4-height/3 0
+		), webkit);
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 5px;
+			z-index: 3;
+			@include prefix((
+				background: linear-gradient(to right, transparent, rgba(g-color("shades","black"),0.2))
+			), webkit, true);
+			@include prefix((
+				transform: translateZ(1px)
+			), webkit);
+		}
+	}
+
+	.book-cover,
+	.book-spine{
+		img{
+			@include builder_background;
+			z-index: -1;
+		}
+	}
+
+	.book-cover {
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		& > .title,
+		& > .author {
+			position: absolute;
+			margin: 30px 30px;
+			text-align: left;
+			text-shadow: 0 0 4px g-color("shades","black");
+		}
+		& > .title {
+			font-size: 2em;
+		}
+		& > .author {
+			bottom: 0;
+			right: 0;
+		}
+	}
+
+
+	.book-spine {
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		width: $book4-spine;
+		z-index: 1;
+		overflow: hidden;
+		@include prefix((
+			transform: rotateY(-90deg) translateX(-$book4-spine),
+			transform-origin: 0 0
+		), webkit);
+		& > span {
+			display: block;
+			white-space: nowrap;
+			text-align: left;
+			position: absolute;
+			top: 8%;
+			left: $book4-spine*0.75;
+			@include prefix((
+				transform: rotateZ(90deg),
+				transform-origin: 0 0
+			), webkit);
+		}
+		//SHADOW
+		&:before {
+			display: block;
+			content: "";
+			width: 100%;
+			height: 100%;
+			background: rgba(g-color("shades","black"), 0.2);
+		}
+	}
+
+
+	&.active,
+	&:hover {
+		& > div{
+			@include prefix((
+				transform: translateX(-2px * $book4-rotation) translateZ(7px * $book4-rotation) translateX(7px * $book4-rotation) rotateY(12deg * $book4-rotation)
+			), webkit);
+		}
+	}
+
+/*
+	&.active,
+	&:hover {
+		& > div{
+			@include prefix((
+				transform: translateX(-10px) translateZ(35px) translateX(35px) rotateY(60deg)
+			), webkit);
+		}
+	}
+*/
+}

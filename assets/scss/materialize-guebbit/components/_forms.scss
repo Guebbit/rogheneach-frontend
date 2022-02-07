@@ -1,0 +1,6 @@
+input.no-materialize{
+	@include prefix((
+		box-shadow: none
+	), webkit);
+	border-bottom: none;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "rogheneach-frontend-old",
+  "version": "1.0.0",
+  "description": "rogheneach website",
+  "author": "guebbit",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.1.0",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/gtm": "^2.4.0",
+    "@nuxtjs/svg": "^0.4.0",
+    "core-js": "^3.21.0",
+    "guebbit-javascript-library": "^2.0.2",
+    "lodash": "^4.17.21",
+    "nuxt": "^2.15.8",
+    "nuxt-i18n": "^6.28.1",
+    "vue-paypal-checkout": "^3.2.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "file-loader": "^6.2.0",
+    "sass": "^1.49.7",
+    "sass-loader": "10",
+    "url-loader": "^4.1.1"
+  }
+}
