@@ -1,5 +1,6 @@
 <template>
 	<div id="rogheneach">
+    <!-- sfondoooo -->
 		<div ref="hero-header" class="hero-header">
 			<div ref="parallax" class="parallax"
 				@mousemove.stop="mouse_parallax($event)"
@@ -76,6 +77,9 @@ export default {
 				itemXY, i;
 
 			for(i = layers.length; i--; ){
+        // heroParallaxJS
+        // heroPanel3
+        // https://codepen.io/oscicen/pen/zyJeJw
 				// TODO itemXY = mouseParallax(x, y, parseInt(layers[i].getAttribute("data-parallax-deep")), layers[i].getAttribute("data-parallax-disallow"));
 				layers[i].style.transform = 'translate(' + (itemXY[0] - 50) + '%, ' + (itemXY[1] - 50) + '%)';
 			}

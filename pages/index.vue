@@ -105,26 +105,20 @@ export default {
     return {
       headerImages: [
         {
-          src: "index/parallax/8.png",
-        },
-        {
-          src: "index/parallax/7.png",
-        },
-        {
-          src: "index/parallax/6.png",
+          src: "index/parallax/4.png",
           deep: 1000,
           disallow: 1
         },
         {
-          src: "index/parallax/5.png",
+          src: "index/parallax/3.png",
           deep: 400,
         },
         {
-          src: "index/parallax/4.png",
+          src: "index/parallax/2.png",
           deep: 600,
         },
         {
-          src: "index/parallax/3.png",
+          src: "index/parallax/1.png",
           deep: 600,
         }
       ],
