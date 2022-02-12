@@ -1,6 +1,6 @@
 <template>
 	<div id="rogheneach">
-    <!-- sfondoooo -->
+    <!-- sfondoooo wallpaper.png -->
 		<div ref="hero-header" class="hero-header">
 			<div ref="parallax" class="parallax"
 				@mousemove.stop="mouse_parallax($event)"
