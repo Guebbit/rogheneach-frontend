@@ -1,7 +1,7 @@
 <template>
   <div>
     <rogh-menu />
-    <rogh-header :images="headerImages"/>
+    <rogh-header />
     <rogh-story-description/>
 
     <div id="buy-volume">
@@ -53,11 +53,7 @@ export default {
     RoghMakingOf,
   },
 
-  //middleware: 'language',
-  middleware({store, redirect}) {
-    console.log("LOCAL", store);
-    return redirect('/')
-  },
+  middleware: 'language',
 
   head() {
     let metaArray = [],
@@ -100,31 +96,6 @@ export default {
     }
   },
 
-
-  data: function () {
-    return {
-      headerImages: [
-        {
-          src: "index/parallax/4.png",
-          deep: 1000,
-          disallow: 1
-        },
-        {
-          src: "index/parallax/3.png",
-          deep: 400,
-        },
-        {
-          src: "index/parallax/2.png",
-          deep: 600,
-        },
-        {
-          src: "index/parallax/1.png",
-          deep: 600,
-        }
-      ],
-    }
-  },
-
   created() {
     //setto il linguaggio di default
     //this.$i18n.locale = document.querySelector('html').getAttribute('lang') || 'en';
@@ -159,5 +130,4 @@ $webtoon-color: #58896f;
 @import '../assets/scss/simplefooter1';
 @import '../assets/scss/heart';
 @import '../assets/scss/index';
-
 </style>

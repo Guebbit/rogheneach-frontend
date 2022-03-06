@@ -16,7 +16,7 @@
     "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/svg": "^0.4.0",
     "core-js": "^3.21.0",
-    "guebbit-javascript-library": "^2.0.2",
+    "guebbit-javascript-library": "^2.2.3",
     "lodash": "^4.17.21",
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.28.1",

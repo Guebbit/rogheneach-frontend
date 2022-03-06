@@ -2,18 +2,6 @@ import Index from './index.vue'
 import {i18n, availableLanguages, loadLanguageAsync} from '../plugins/i18n';
 import * as assert from "assert";
 
-// lazyload component
-const About = (resolve: any) => {
-  //mi assicuro che esista
-  // @ts-ignore
-  require.ensure(['./about.vue'], () => {
-    //poi lo richiedo
-    resolve(
-      require('./about.vue')
-    );
-  })
-}
-
 
 export default [
   {
@@ -50,11 +38,6 @@ export default [
         name: 'index',
         path: '',
         component: Index
-      },
-      {
-        name: 'about',
-        path: 'about',
-        component: About
       }
     ]
   }

@@ -1,15 +1,22 @@
 <template>
   <div id="author-who">
     <div class="heroPanel2 full-height centered with-shadow special-shadow dark-shadow white-text">
-      <img class="background" src="assets/images/generic/mychron-floorspread-fanarts.jpg"/>
+      <img
+        class="background"
+        :src="$config.assetUrl+'images/generic/thumbnail/mychron-floorspread-fanarts.jpg'"
+        :data-src="$config.assetUrl+'images/generic/mychron-floorspread-fanarts.jpg'"
+      />
       <div class="panel-content">
         <div>
           <div class="container">
 
             <div class="user-profile dark-shadow-highlight">
-              <img class="user-image z-depth-4"
-                   src="/assets/images/generic/mychron-avatar-face.jpg"
-                   :alt="$t('generic.author.username') + $t('generic.author.name')"/>
+              <img
+                class="user-image z-depth-4"
+                :src="$config.assetUrl+'images/generic/thumbnail/mychron-avatar-face.jpg'"
+                :data-src="$config.assetUrl+'images/generic/mychron-avatar-face.jpg'"
+                :alt="$t('generic.author.username') + $t('generic.author.name')"
+              />
               <div class="mt-40 show-on-large"></div>
               <h2 class="user-title">
                 {{ $t('generic.author.name') }}
@@ -43,7 +50,7 @@
          :href="$t('social.patreon.url')"
          target="_blank"
       >
-        <img src="assets/images/logo/logo-patreon.png"
+        <img :src="$config.assetUrl+'images/logo/logo-patreon.png'"
              :alt="$t('social.patreon.alt')"
         />
         <span class="label">{{ $t('social.patreon.text') }}</span>

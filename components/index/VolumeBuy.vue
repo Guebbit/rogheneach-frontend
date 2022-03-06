@@ -1,8 +1,8 @@
 <template>
   <div class="heroPanel2 centered with-shadow special-shadow dark-shadow white-text">
     <img class="background"
-         :src="'assets/images/volumes/thumbnail/'+cover"
-         :data-src="'assets/images/volumes/'+cover"
+         :src="$config.assetUrl+'images/volumes/thumbnail/'+cover"
+         :data-src="$config.assetUrl+'images/volumes/'+cover"
          :alt="title"
          :title="title"
     />
@@ -14,15 +14,15 @@
               <div class="book4 observer-activate" ref="book">
                 <div>
                   <div class="book-cover">
-                    <img :src="'assets/images/volumes/thumbnail/'+cover"
-                         :data-src="'assets/images/volumes/'+cover"
+                    <img :src="$config.assetUrl+'images/volumes/thumbnail/'+cover"
+                         :data-src="$config.assetUrl+'images/volumes/'+cover"
                          :alt="title"
                          :title="title + subtitle"
                     />
                   </div>
                   <div class="book-spine">
-                    <img :src="'assets/images/volumes/thumbnail/'+spine"
-                         :data-src="'assets/images/volumes/'+spine"
+                    <img :src="$config.assetUrl+'images/volumes/thumbnail/'+spine"
+                         :data-src="$config.assetUrl+'images/volumes/'+spine"
                          :alt="title"
                          :title="title + subtitle"
                     />

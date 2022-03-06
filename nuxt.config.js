@@ -1,5 +1,13 @@
 export default {
   mode: 'universal',
+  /**
+   * Enviroment Variables
+   */
+  env: {},
+  publicRuntimeConfig: {
+    assetUrl: 'https://assets.guebbit.com/rogheneach/',
+    baseUrl: 'https://rogheneach.com/'
+  },
   /*
   ** Headers of the page
   */
@@ -83,7 +91,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/svg',
     ['nuxt-i18n', {
-      locales: ['en', 'es'],
+      locales: ['en', 'it'],
       defaultLocale: 'en',
       vueI18n: {
         fallbackLocale: 'en',

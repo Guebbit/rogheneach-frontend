@@ -1,8 +1,8 @@
 <template>
   <div id="rogheneach-story" class="heroPanel2 centered with-shadow dark-shadow white-text black">
     <img class="background"
-         src="assets/images/generic/thumbnail/wallpaper-rogh-characters.png"
-         data-src="assets/images/generic/wallpaper-rogh-characters.png"
+         :src="$config.assetUrl+'images/generic/thumbnail/wallpaper-rogh-characters.png'"
+         :data-src="$config.assetUrl+'images/generic/wallpaper-rogh-characters.png'"
     />
     <div class="panel-content">
       <div>
@@ -40,12 +40,12 @@
             <a :href="$t('storyDescription.links.tapastic.url')" target="_blank"
                :alt="$t('storyDescription.links.tapastic.alt')"
             >
-              <img src="assets/images/logo/logo-tapastic.png">
+              <img :src="$config.assetUrl+'images/logo/logo-tapastic.png'">
             </a>
             <a :href="$t('storyDescription.links.webtoon.url')" target="_blank"
                :alt="$t('storyDescription.links.tapastic.alt')"
             >
-              <img src="assets/images/logo/logo-webtoon.png">
+              <img :src="$config.assetUrl+'images/logo/logo-webtoon.png'">
             </a>
           </div>
           <!--
