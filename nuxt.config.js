@@ -3,7 +3,9 @@ export default {
   /**
    * Enviroment Variables
    */
-  env: {},
+  env: {
+    VUE_APP_I18N_LOCALE: 'it'
+  },
   publicRuntimeConfig: {
     assetUrl: 'https://assets.guebbit.com/rogheneach/',
     baseUrl: 'https://rogheneach.com/'
@@ -110,7 +112,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, { isDev, isClient }) {
+    extend(config, {isDev, isClient}) {
       /*
       // https://github.com/nuxt/nuxt.js/blob/dev/packages/webpack/src/config/base.js#L382-L411
       config.module.rules.push({
@@ -151,5 +153,5 @@ export default {
         config.mode = 'development'
       }
     }
-  },
+  }
 }
